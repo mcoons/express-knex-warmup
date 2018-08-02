@@ -11,6 +11,6 @@ exports.seed = function(knex, Promise) {
       ]);
     })
     .then(() => {
-      return knex.raw("ALTER SEQUENCE game_id_seq RESTART WITH 4;")
+      return knex.raw("ALTER SEQUENCE students_id_seq RESTART WITH 4;")
     });
 };
